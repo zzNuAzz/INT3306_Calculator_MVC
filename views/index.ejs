@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator MVC</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="console">
+      <div id="result"><%= result_txt %></div>
+    </div>
+    <div class="keyboard">
+      <div class="row-wrap">
+        <div class="row">
+          <a class="button symbol" id="btn_open" href="/operator/open">(</a>
+          <a class="button symbol" id="btn_close" href="/operator/close">)</a>
+          <a class="button symbol" id="btn_percent" href="/operator/percent">%</a>
+          <a class="button symbol" id="btn_del" href="/operator/del"><%= del_btn_txt %></a>
+        </div>
+      </div>
+
+      <div class="row-wrap">
+        <div class="row">
+          <a class="button" id="btn_7" href="/number/7">7</a>
+          <a class="button" id="btn_8" href="/number/8">8</a>
+          <a class="button" id="btn_9" href="/number/9">9</a>
+          <a class="button operator" id="btn_div" href="/operator/div">÷</a>
+        </div>
+      </div>
+
+      <div class="row-wrap">
+        <div class="row">
+          <a class="button" id="btn_4" href="/number/4">4</a>
+          <a class="button" id="btn_5" href="/number/5">5</a>
+          <a class="button" id="btn_6" href="/number/6">6</a>
+          <a class="button operator" id="btn_mul" href="/operator/mul">x</a>
+        </div>
+      </div>
+      <div class="row-wrap">
+        <div class="row">
+          <a class="button" id="btn_1" href="/number/1">1</a>
+          <a class="button" id="btn_2" href="/number/2">2</a>
+          <a class="button" id="btn_3" href="/number/3">3</a>
+          <a class="button operator" id="btn_sub" href="/operator/sub">-</a>
+        </div>
+      </div>
+      <div class="row-wrap">
+        <div class="row">
+          <a class="button" id="btn_0" href="/number/0">0</a>
+          <a class="button" id="btn_point" href="/operator/point">.</a>
+          <a class="button" id="btn_eq" href="/operator/equal">=</a>
+          <a class="button operator" id="btn_add" href="/operator/add">+</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
